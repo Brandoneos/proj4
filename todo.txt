@@ -1,0 +1,47 @@
+1. Test other canvaslist.h functions
+1.5 while testing operator=, need to fix using this (maybe) ✅
+2. start on milestone 3
+2. Difference between listBack and listFront in pop_back() for some reason
+figure it out✅
+3. Figure out why my pop_front() stopped working...✅
+
+
+Questions
+1. Does insertAfter() include -1 to insert as first element? Answer: no, -1 is out of range
+
+
+
+
+
+info on gradescope
+Tests 1-14 are for Shape.h
+Tests 15-26 are for canvaslist.h ✅
+Tests 27-31 are for both, one has to do with deep copy
+valgrind check
+
+
+
+Failed test cases 20,21,22,23,24,26 - for canvaslist.h
+19,20 - insertAfter() edge cases - Segmentation violation signal✅
+21 - pop_front() - Segmentation violation signal✅
+22 - pop_back() - Segmentation violation signal - tries to access memory that isn't allocated yet✅
+23 - removeAt() - failed to update size? ✅
+24 - shapeAt() - failed check at index -5
+26 - clear() - segmentation violation signal ✅
+
+Next:
+7-14 - shape.h
+27-31- are for both, one has to do with deep copy
+
+do Circle
+-working on printShape(look up zybooks overloading)
+
+Next:
+Tests for :
+1. Circle
+2. Rectangle
+3. RightTriangle
+
+2-3 errors in gradescope: 27,28,29
+1. Copy constructor - shallow copy
+2. operator=() function - segmentation violation signal 
